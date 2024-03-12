@@ -67,3 +67,30 @@ header{
     margin-top: 0px;
     color: #6a6d6d;
 }
+
+/* sessão projetos - inicio */
+#projetos{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 110px;
+}
+
+#projetos h2{
+    /* Aumenta fonte */
+    font-size: 8rem;
+    /* espaço entre as letras */
+    line-height: 1;
+    /* Transfoma o texto em maiúsculo */
+    text-transform: uppercase;
+    /* Quebra de caractere */
+    word-break: break-all;
+    /* Espaçamento entre os caracteres */
+    max-width: 4ch;
+    color: #202d73;
+}
+
+
+
+
+/* sessão projetos - final */
