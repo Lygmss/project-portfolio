@@ -47,7 +47,8 @@ header{
 }
 
 #perfil{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     max-width: 1200px;
     margin: 0 auto;
     /* desgrudar o texto da imagem */
@@ -72,10 +73,11 @@ header{
 
 /* sessão projetos - inicio */
 #projetos{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 50px;
     gap: 110px;
 }
 
@@ -89,8 +91,11 @@ header{
     /* Quebra de caractere */
     word-break: break-all;
     /* Espaçamento entre os caracteres */
-    max-width: 4ch;
+    max-width: 3.5ch;
     color: #202d73;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .principal-destaque{
@@ -203,3 +208,39 @@ header{
 }
 
 /* sessão projetos - final */
+
+/* inicio da sessão de cursos */
+ #cursos{
+    background-color: #202d73;
+    margin-top: 50px;
+ }
+ 
+ #cursos-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 110px;
+    background: #202d73;
+ }
+
+#cursos-grid h2{
+        /* Aumenta fonte de acordo com a tela do dispositivo */
+        font-size: 8rem;
+        /* espaço entre as letras */
+        line-height: 1;
+        /* Transfoma o texto em maiúsculo */
+        text-transform: uppercase;
+        /* Quebra de caractere */
+        word-break: break-all;
+        /* Espaçamento entre os caracteres - ch: caractere */
+        max-width: 3.5ch;
+        color: #fff;
+        font-family: "Merriweather", serif;
+        font-weight: 600;
+        font-style: normal;
+
+}
+
+
+/* final da sessão de cursos */
