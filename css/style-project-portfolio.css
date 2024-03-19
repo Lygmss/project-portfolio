@@ -239,8 +239,77 @@ header{
         font-family: "Merriweather", serif;
         font-weight: 600;
         font-style: normal;
+        gap: 110px;
 
 }
+
+#cursos-texto-principal{
+    line-height: 1.7;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+#cursos-texto-destaque{
+    background: #fff;
+    color: #202d73;
+    border-radius: 4px;
+    line-height: 1.4;
+    padding: 4px 8px;
+    border-radius: 2px 6px;
+    padding: 4px;
+}
+
+#cursos-lista{
+    display: flex;
+    gap: 10px;
+}
+
+.cursos-item{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    flex-direction: column;
+    display: flex;
+}
+
+.curso-titulo{
+    flex: 1;
+}
+
+.curso-nivel, .curso-local{
+    color: #619191;
+}
+
+#cursos-complementares{
+    margin-top: 40px;
+}
+
+#cursos-complementares h3{
+    color: #96a2a2;
+}
+
+.cursos-complementares-item{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 400;
+}
+
+#idiomas h3{
+    color: #b8c4c4;
+}
+
+.nivel-cor-idiomas{
+    color: #b8c4c4;
+}
+
+#cursos-idiomas{
+    font-weight: 400;
+    color: #fff;
+}
+
 
 
 /* final da sessão de cursos */
