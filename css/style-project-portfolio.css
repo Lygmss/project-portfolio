@@ -7,6 +7,11 @@
     font-style: normal;
 }
 
+html{
+    /* Scroll com efeito suave */
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }
@@ -18,7 +23,8 @@ header > img{
 header{
     display: flex;
     /* da um espaço entre eles (opcional)*/
-    justify-content: space-between;
+    /* justify-content: space-between; com logo*/
+    justify-content: end;
     /* justify-content: end; sem o logo */
     /* não quebra o layout se der zoom */
     max-width: 1200px;
@@ -26,6 +32,7 @@ header{
     /* centralização na vertical dos elementos */
     align-items: center;
     padding: 35px 20px;
+    min-height: 20vh;
 }
 
 #menu{
@@ -54,6 +61,7 @@ header{
     /* desgrudar o texto da imagem */
     gap: 110px;
     align-items: center;
+    min-height: 80vh;
 }
 
 #perfil-dados > h1{
@@ -77,8 +85,11 @@ header{
     grid-template-columns: 1fr 2fr;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 50px;
+    /* padding: 50px; */
     gap: 110px;
+    min-height: 100vh;
+    padding-bottom: 20px;
+    align-items: center;
 }
 
 #projetos h2{
@@ -212,7 +223,8 @@ header{
 /* inicio da sessão de cursos */
  #cursos{
     background-color: #202d73;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    min-height: 100vh;
  }
  
  #cursos-grid{
@@ -222,6 +234,7 @@ header{
     margin: 0 auto;
     gap: 110px;
     background: #202d73;
+    align-items: center;
  }
 
 #cursos-grid h2{
@@ -240,6 +253,7 @@ header{
         font-weight: 600;
         font-style: normal;
         gap: 110px;
+    
 
 }
 
@@ -317,7 +331,8 @@ header{
 /* inicio footer */
 
 footer{
-    padding-top: 40px;
+    /* padding-top: 40px; */
+    min-height: 100vh;
 }
 
 #footer-conteudo{
@@ -338,6 +353,10 @@ footer{
     border-radius: 4px;
 }
 
+#form-grid option{
+    font-size: 1.1rem;
+}
+
 .btn-contato{
     /* width: 100%; */
     padding: 12px 20px;
@@ -356,6 +375,7 @@ footer{
     text-transform: uppercase;
     color: #202d73;
     text-align: center;
+    letter-spacing: 1.2rem;
 }
 
 #footer-inferior{
@@ -363,10 +383,6 @@ footer{
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
     padding: 40px 0;
-}
-
-#footer-inferior div{
-    
 }
 
 #footer-inferior a{
@@ -386,4 +402,9 @@ footer{
 
 .alinhar-direita{
     text-align: right;
+}
+
+#copy{
+    padding: 20px 0px;
+    text-align: center;
 }
