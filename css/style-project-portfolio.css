@@ -357,6 +357,23 @@ footer{
     font-size: 1.1rem;
 }
 
+#msg{
+    width: 100%;
+    height: 200px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    padding: 12px 20px;
+    border: 1px solid #202d73;
+    border-radius: 4px;
+}
+
+#form-aviso{
+    padding: 0;
+    margin-top: 0;
+    font-size: 12px;
+    color: #6a6d6d;
+}
+
 .btn-contato{
     /* width: 100%; */
     padding: 12px 20px;
@@ -368,6 +385,7 @@ footer{
     margin-bottom: 20px 0px;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 #footer-conteudo h2{
@@ -408,3 +426,9 @@ footer{
     padding: 20px 0px;
     text-align: center;
 }
+
+
+.borda-erro{
+    border: 1px solid red;
+}
+
