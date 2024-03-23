@@ -180,7 +180,7 @@
                     <input type="email" name="email" id="email" placeholder="Email*" >
                     <input type="text" name="telefone" id="telefone" placeholder="Telefone">
                     <select name="tipo" id="tipo">
-                        <option value="0" disabled selected> Selecione...</option>
+                        <option value="" disabled selected> Selecione...</option>
                         <option value="duvidas">Dúvidas</option>
                         <option value="servicos">Serviços</option>
                         <option value="sugestoes">Sugestões</option>
@@ -226,10 +226,49 @@
 
     </footer>
     <script>
-        function enviarContato(){
-            let nome = document.getElementById('nome')
+        // function enviarContato(){
 
-            alert(nome.value)
+        //     let nome = document.getElementById('nome')
+
+        //     if(nome.value == ''){
+        //         nome.style.border = '1px solid red'
+        //     }else{
+        //         nome.style.border = '1px solid #202c73'
+        //     }
+
+        //     // Não é necessarrio declarar 
+
+        //     if(email.value == ''){
+        //         email.style.border = '1px solid red'
+        //     }else{
+        //         email.style.border = '1px solid #202c73'
+        //     }
+            
+        //     if(tipo.value ==''){
+        //         tipo.style.border = '1px solid red'
+        //     }else{
+        //         tipo.style.border = '1px solid #202c73'
+        //     }
+
+        // }
+
+        // Outra alternativa
+        function enviarContato(){
+            validaCampoVazio(nome)
+            validaCampoVazio(email)
+            validaCampoVazio(tipo)
+        }
+        
+
+
+
+        function validaCampoVazio(campo){
+            if(campo.value == ''){
+                campo.style.border = '1px solid red'
+            }else{
+                campo.style.border = '1px solid #202c73'
+            }
+
         }
 
 
