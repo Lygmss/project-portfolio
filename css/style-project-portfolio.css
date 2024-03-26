@@ -541,7 +541,15 @@ footer{
     .alinhar-direita{
         text-align: center;
     }
-
+    #projetos-lista{
+        grid-template-columns: 1fr;
+    }
+    #projetos-musica{
+        grid-template-columns: 1fr;
+    }
+    #projetos-hardware{
+        grid-template-columns: 1fr;
+    }
 
 
 
