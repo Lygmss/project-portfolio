@@ -432,3 +432,120 @@ footer{
     border: 1px solid red;
 }
 
+/* Inicioo CSS responsivo*/
+
+/* O CSS inserido dentro @media abaixo será carregado quando o dispositivo possuir tela com largura menor ou igual a 600px */
+/* Será responsivo, desse código p/cima é DESKTOP */
+@media only screen and (max-width: 600px) {
+    header{
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        padding: 10px;
+        
+    }
+
+    header ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu{
+        margin-top: 15px;
+        flex-direction: column;
+        /* display: none; */
+    }
+
+    #perfil{
+        width: 100%;
+        gap: 10px;
+        min-height: 400px;
+    }
+
+    #perfil-dados > h1{
+        font-size: 2.2rem;
+        min-height: 100%;
+    }
+
+    #perfil img{
+        /* width: 50px; */
+        width: 100%;
+        /* height: auto; */
+    }
+    
+    #projetos{
+        width: 100%;
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+    
+    #projetos h2{
+        word-break: normal;
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #projetos-texto-principal{
+        padding: 10px;
+    }
+
+    #cursos{
+        width: 100%;
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+    
+    #cursos h2{
+        word-break: normal;
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #cursos-texto-principal{
+        padding: 10px;
+    }
+
+    #cursos-lista{
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    #cursos-complementares, #idiomas{
+        padding: 10px;
+    }
+
+    #footer-conteudo{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #form-grid input{
+        width: 100%;
+
+    }
+
+    #footer-conteudo h2{
+        font-size: 3rem;
+        text-align: center;
+        max-width: 100%;
+        letter-spacing: normal;
+    }
+
+    #footer-inferior{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .alinhar-direita{
+        text-align: center;
+    }
+
+
+
+
+
+    
+  }
+/* final do CSS responsivo */
