@@ -238,23 +238,21 @@ header{
  }
 
 #cursos-grid h2{
-        /* Aumenta fonte de acordo com a tela do dispositivo */
-        font-size: 8rem;
-        /* espaço entre as letras */
-        line-height: 1;
-        /* Transfoma o texto em maiúsculo */
-        text-transform: uppercase;
-        /* Quebra de caractere */
-        word-break: break-all;
-        /* Espaçamento entre os caracteres - ch: caractere */
-        max-width: 3.5ch;
-        color: #fff;
-        font-family: "Merriweather", serif;
-        font-weight: 600;
-        font-style: normal;
-        gap: 110px;
-    
-
+    /* Aumenta fonte de acordo com a tela do dispositivo */
+    font-size: 8rem;
+    /* espaço entre as letras */
+    line-height: 1;
+    /* Transfoma o texto em maiúsculo */
+    text-transform: uppercase;
+    /* Quebra de caractere */
+    word-break: break-all;
+    /* Espaçamento entre os caracteres - ch: caractere */
+    max-width: 3.5ch;
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+    gap: 110px;
 }
 
 #cursos-texto-principal{
@@ -285,8 +283,7 @@ header{
     color: #fff;
     padding: 10px;
     border-radius: 4px;
-    flex-direction: column;
-    display: flex;
+    flex: 1;
 }
 
 .curso-titulo{
@@ -439,32 +436,37 @@ footer{
 @media only screen and (max-width: 600px) {
     header{
         width: 100%;
-        flex-direction: column;
+        /* flex-direction: column;
         align-items: start;
-        padding: 10px;
+        padding: 10px; */
         
     }
 
-    header ul{
+    /* header ul{
         padding: 0;
         margin: 0;
-    }
+    } */
 
     #menu{
-        margin-top: 15px;
         flex-direction: column;
         /* display: none; */
     }
 
     #perfil{
         width: 100%;
-        gap: 10px;
-        min-height: 400px;
+        gap: 0;
+        grid-template-columns: 1fr;
     }
 
     #perfil-dados > h1{
         font-size: 2.2rem;
         min-height: 100%;
+        text-align: center
+    }
+
+    #perfil-dados > h2, p{
+        min-height: 100%;
+        text-align: center
     }
 
     #perfil img{
@@ -490,7 +492,13 @@ footer{
         padding: 10px;
     }
 
-    #cursos{
+    #cursos-lista{
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; */
+        flex-wrap: wrap;
+    }
+
+    #cursos-grid{
         width: 100%;
         gap: 0;
         grid-template-columns: 1fr;
@@ -505,20 +513,16 @@ footer{
 
     #cursos-texto-principal{
         padding: 10px;
+        text-align: center;
     }
 
-    #cursos-lista{
-        flex-wrap: wrap;
-        margin: 10px;
-    }
-
+   
     #cursos-complementares, #idiomas{
         padding: 10px;
     }
 
     #footer-conteudo{
         width: 100%;
-        padding: 10px;
     }
 
     #form-grid input{
