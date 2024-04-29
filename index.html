@@ -253,10 +253,22 @@
             validaCampoVazio(nome)
             validaCampoVazio(email)
             validaCampoVazio(tipo)
+            // aqui os dados do backend
+
+            // captura dos dados dos inputs do form para ser enviado ao backend
+            // serializacão dos Dados
+
+            let dados = new FormData(form)
+            
+            // Envia os dados usando a fetch API ('AJAX')
+
+            fetch('backend/contato.php',{
+                method:'POST',
+                body: dados
+            })
         }
+
         
-
-
 
         function validaCampoVazio(campo){
             if(campo.value == ''){
