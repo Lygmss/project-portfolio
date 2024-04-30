@@ -170,7 +170,7 @@
         <div id="footer-conteudo">
             <h2>Contato</h2>
                 
-            <form action="">
+            <form action="" id= "form">
                 <div id="form-grid">
                     <input type="text" name="nome" id="nome" placeholder="Nome*">
                     <input type="email" name="email" id="email" placeholder="Email*" >
@@ -221,7 +221,29 @@
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- importacao inputmask -->
+    <script src="js/inputmask/inputmask.min.js"></script>
+
     <script>
+// mascara input telefone
+
+        Inputmask({
+            mask:["(99) 9999-9999", "(99) 99999-9999"]
+        }).mask(telefone)
+
+// *cpf*
+// Inputmask({
+         // mask:["999.999.999-99"]
+    // }).mask(cpf)
+
+// *cep*
+// Inputmask({
+         // mask:["99999-999"]
+    // }).mask(cep)
+
+
         // function enviarContato(){
 
         //     let nome = document.getElementById('nome')
@@ -254,7 +276,8 @@
             validaCampoVazio(email)
             validaCampoVazio(tipo)
             // aqui os dados do backend
-
+            
+            if (nome.value != '' && email.value != '' && telefone.value != '' && tipo.value !='' && msg.value != ''){} 
             // captura dos dados dos inputs do form para ser enviado ao backend
             // serializacão dos Dados
 
@@ -265,6 +288,26 @@
             fetch('backend/contato.php',{
                 method:'POST',
                 body: dados
+            })
+
+            .then(response=> response.json())
+            .then(dados =>{
+                // resposta do backend
+                if(dados.STATUS == 0){
+                    Swal.fire({
+                        title: 'Atenção!',
+                        text: dados.MSG,
+                        icon: 'error'
+                    })
+                }else{
+                    Swal.fire({
+                        title: 'Atenção!',
+                        text: dados.MSG,
+                        icon: 'success'
+                    })
+                    form.reset()
+                }
+
             })
         }
 
