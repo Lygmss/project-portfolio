@@ -234,6 +234,8 @@ header{
     padding: 10px;
     border-radius: 4px;
     flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .curso-titulo{
@@ -414,7 +416,7 @@ footer{
         text-align: center
     }
 
-    #perfil-dados > h2, p{
+    #perfil-dados > h2, #perfil-dados > p{
         min-height: 100%;
         text-align: center
     }
@@ -433,9 +435,11 @@ footer{
     
     #projetos h2{
         word-break: normal;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
         max-width: 100%;
+        min-width: 0;
+        overflow-wrap: anywhere;
     }
 
     #projetos-texto-principal{
@@ -443,9 +447,12 @@ footer{
     }
 
     #cursos-lista{
-        /* display: grid;
-        grid-template-columns: 1fr 1fr; */
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cursos-item p{
+        overflow-wrap: anywhere;
     }
 
     #cursos-grid{
@@ -495,7 +502,7 @@ footer{
     .alinhar-direita{
         text-align: center;
     }
-    #projetos-lista{
+    .projetos-lista{
         grid-template-columns: 1fr;
     }
     #projetos-musica{
