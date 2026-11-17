@@ -459,6 +459,16 @@ footer{
         width: 100%;
         gap: 0;
         grid-template-columns: 1fr;
+        min-width: 0;
+    }
+
+    #cursos-principal, #cursos-lista{
+        width: 100%;
+        min-width: 0;
+    }
+
+    .cursos-item{
+        width: 100%;
     }
     
     #cursos h2{
